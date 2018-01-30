@@ -1,39 +1,16 @@
-const toDoList = {
-  todos: [],
-  displayToDos: function() {
-    if (this.todos.length === 0) {
-      console.log('Your to do list is empty!');
-    } else {
-      console.log('My todos: ');
-      for (var i = 0; i < this.todos.length; i++) {
-        let text = this.todos[i].todoText;
-        if (this.todos[i].completed === true) {
-          console.log('(x)', text);
-        } else {
-          console.log('()', text);
-        }
-      }
-    }
-  },
-  addToDo: function(todoText) {
-    this.todos.push({
-      todoText: todoText,
-      completed: false
-    });
-    this.displayToDos();
-  },
-  changeToDo: function(position, todoText) {
-    this.todos[position].todoText = todoText;
-    this.displayToDos();
-  },
-  deleteToDo: function(position) {
-    this.todos.splice(position, 1);
-    this.displayToDos();
-  },
-  toggleCompleted: function(position) {
-    const todo = this.todos[position];
-    // toggling initial value created with addToDo
-    todo.completed = !todo.completed;
-    this.displayToDos();
-  }
-};
+#4 Update displayToDo method
+
+(1) to message user if the toDO list is empty and (2) to show whether toDo task has been completed or not with ()(x)
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Tue Jan 30 13:08:42 2018 +0100
+#
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   todo.js
+#
+
