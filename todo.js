@@ -17,5 +17,11 @@ const toDoList = {
   deleteToDo: function(position) {
     this.todos.splice(position, 1);
     this.displayToDos();
+  },
+  toggleCompleted: function(position) {
+    const todo = this.todos[position];
+    // toggling initial value created with addToDo
+    todo.completed = !todo.completed;
+    this.displayToDos();
   }
 };
