@@ -13,4 +13,3 @@
 # Changes to be committed:
 #	modified:   todo.js
 #
-
