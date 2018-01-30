@@ -10,8 +10,8 @@ const toDoList = {
       });
     this.displayToDos();
   },
-  changeToDo: function(position, newValue) {
-    this.todos[position] = newValue;
+  changeToDo: function(position, todoText) {
+    this.todos[position].todoText = todoText;
     this.displayToDos();
   },
   deleteToDo: function(position) {
