@@ -1,10 +1,13 @@
 const toDoList = {
-  todos: ['item 1', 'item2', 'item3'],
+  todos: [],
   displayToDos: function() {
     console.log('My todos:', this.todos);
   },
-  addToDo: function(todo) {
-    this.todos.push(todo);
+  addToDo: function(todoText) {
+    this.todos.push({
+      todoText: todoText,
+      completed: false
+      });
     this.displayToDos();
   },
   changeToDo: function(position, newValue) {
