@@ -35,5 +35,26 @@ const toDoList = {
     // toggling initial value created with addToDo
     todo.completed = !todo.completed;
     this.displayToDos();
+  },
+  toggleAll: function() {
+    const allToDos = this.todos.length;
+    var completedToDos = 0;
+
+    for (let i = 0; i < allToDos; i++) {
+      if (this.todos[i].completed === true) {
+        completedToDos++;
+      }
+    }
+
+    if (completedToDos === allToDos) {
+      for (let i = 0; i < allToDos; i++) {
+        this.todos[i].completed = false;
+      }
+    } else {
+      for (let i = 0; i < allToDos; i++) {
+        this.todos[i].completed = true;
+      }
+    }
+    this.displayToDos();
   }
 };
