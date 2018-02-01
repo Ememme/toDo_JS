@@ -58,3 +58,9 @@ const toDoList = {
     this.displayToDos();
   }
 };
+
+const displayToDosButton = document.getElementById('displayToDosButton');
+
+displayToDosButton.addEventListener('click', function(){
+  toDoList.displayToDos();
+});
