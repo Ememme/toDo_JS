@@ -60,7 +60,12 @@ const toDoList = {
 };
 
 const displayToDosButton = document.getElementById('displayToDosButton');
+const toggleAllButton = document.getElementById('toggleAllButton');
 
 displayToDosButton.addEventListener('click', function(){
   toDoList.displayToDos();
+});
+
+toggleAllButton.addEventListener('click', function(){
+  toDoList.toggleAll();
 });
